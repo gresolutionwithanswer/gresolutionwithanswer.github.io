@@ -23,7 +23,7 @@
 
 .navbar-logo{
     grid-column-start:1;
-    font-size:50%;
+    font-size:100%;
     margin:0%;
     padding:0%;
 }
@@ -40,6 +40,7 @@
     margin-top:10%;
   }
   
+
   
   
   @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
@@ -161,6 +162,7 @@ section {
 
 
 #Quant{
+    font-size:200%;
     grid-column-start: 2;
     border: 0.1em solid rgb(0, 0, 0);
     padding: 15% 15% 15% 15%;
@@ -174,6 +176,7 @@ section {
     text-decoration: underline;
 }
 #Verbal{
+    font-size:200%;
     grid-column-start: 3;
     border: 0.1em solid rgb(0, 0, 0);
     padding: 15% 15% 15% 15%;
@@ -185,8 +188,8 @@ section {
     text-decoration: underline;
     transition: all .4s ease;
 }
-h1{
-    font-size: 400%;   
+.main-container > a{
+    font-size: 500%;   
 }
 a{
     text-decoration: none;
@@ -194,10 +197,33 @@ a{
     font-weight: bold;
     font-family: helvetica;
 }
+
 #subjects {
-    margin-top: 10%;
+  margin-top: 10%;
     font-size: 400%;
-    margin-left: 40%;
+    text-align: center;
+    width: 100%;
     font-family:cursive;
+}
+
+@media screen and (max-width:660px){
+  #main-container{
+    display: inline;
+  }
+  #Quant{
+    margin: 10% 10% 10% 10% ;
+    padding-bottom: 5%;
+    padding-top:5%;
+  }
+  #Verbal{
+    margin: 10% 10% 10% 10% ;
+    padding-bottom: 5%;
+    padding-top:5%;
+  }
+    .navbar-container{
+      font-size:70%;
+  }
+  
+  
 }
 

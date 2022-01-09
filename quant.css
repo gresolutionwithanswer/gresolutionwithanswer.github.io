@@ -161,9 +161,10 @@ a{
 }
 
 #chapters {
+    width:100%;
+    text-align: center;
     margin-top: 10%;
     font-size: 400%;
-    margin-left: 40%;
     font-family:cursive;
 }
 
@@ -190,3 +191,12 @@ h2 {
     word-spacing: 0.5rem;
     font-family: helvetica;
 }
+
+@media screen and (max-width:660px){
+      .navbar-container{
+        font-size:70%;
+    }
+        h2{
+            padding-left: 2%;
+        }
+  
