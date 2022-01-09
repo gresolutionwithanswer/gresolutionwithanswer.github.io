@@ -134,3 +134,46 @@ section {
     line-height: 1.8;
   }
 }
+
+#main-container {
+    display:grid;
+    grid-template-columns: 15% 35% 35% 15%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+
+#Quant{
+    grid-column-start: 2;
+    border: 0.1em solid rgb(0, 0, 0);
+    padding: 15% 15% 15% 15%;
+    margin-right: 5%;
+    
+}
+#Quant:hover{
+    border:0.2em dotted rgb(50, 0, 0);
+    transform:scale(1.1);
+    transition: all .4s ease;
+}
+#Verbal{
+    grid-column-start: 3;
+    border: 0.1em solid rgb(0, 0, 0);
+    padding: 15% 15% 15% 15%;
+    margin-left: 5%;
+}
+#Verbal:hover{
+    border:0.2em dotted rgb(50, 0, 0);
+    transform:scale(1.1);
+    transition: all .4s ease;
+}
+
+h1{
+    font-family: Helvetica;
+    font-size: 400%;
+}
+a{
+    text-decoration: none;
+    color :black;
+}
+
