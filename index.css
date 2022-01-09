@@ -1,3 +1,5 @@
+
+
 .navbar-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto; 
@@ -37,6 +39,7 @@
     
     margin-top:10%;
   }
+  
   
   
   @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
@@ -182,10 +185,8 @@ section {
     text-decoration: underline;
     transition: all .4s ease;
 }
-
 h1{
-    font-size: 400%;
-    
+    font-size: 400%;   
 }
 a{
     text-decoration: none;
