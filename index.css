@@ -155,6 +155,7 @@ section {
 
     transform:scale(1.1);
     transition: all .4s ease;
+    text-decoration: underline;
 }
 #Verbal{
     grid-column-start: 3;
@@ -165,22 +166,24 @@ section {
 }
 #Verbal:hover{
     transform:scale(1.1);
+    text-decoration: underline;
     transition: all .4s ease;
 }
 
 h1{
-    font-family: Helvetica;
     font-size: 400%;
+    
 }
 a{
     text-decoration: none;
     color :rgb(120,220,120);
     font-weight: bold;
+    font-family: helvetica;
 }
 #subjects {
     margin-top: 10%;
-    font-family: Helvetica;
     font-size: 400%;
     margin-left: 40%;
+    font-family:cursive;
 }
 
