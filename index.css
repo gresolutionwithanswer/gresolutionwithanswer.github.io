@@ -134,3 +134,53 @@ section {
     line-height: 1.8;
   }
 }
+
+#main-container {
+    display:grid;
+    grid-template-columns: 15% 35% 35% 15%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+
+#Quant{
+    grid-column-start: 2;
+    border: 0.1em solid rgb(0, 0, 0);
+    padding: 15% 15% 15% 15%;
+    margin-right: 5%;
+    background-color: rgba(51,51,51,0.9);
+}
+#Quant:hover{
+
+    transform:scale(1.1);
+    transition: all .4s ease;
+}
+#Verbal{
+    grid-column-start: 3;
+    border: 0.1em solid rgb(0, 0, 0);
+    padding: 15% 15% 15% 15%;
+    margin-left: 5%;
+    background-color: rgba(51,51,51,0.9);
+}
+#Verbal:hover{
+    transform:scale(1.1);
+    transition: all .4s ease;
+}
+
+h1{
+    font-family: Helvetica;
+    font-size: 400%;
+}
+a{
+    text-decoration: none;
+    color :rgb(120,220,120);
+    font-weight: bold;
+}
+#subjects {
+    margin-top: 10%;
+    font-family: Helvetica;
+    font-size: 400%;
+    margin-left: 40%;
+}
+
