@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>GRE Quant</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="quant.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <!--Header-->
@@ -29,15 +30,15 @@
         <!--Main content-->
             <div>
                 <h1 id="chapters">Chapters</h1>
-                <a style="display:block"  href="#">
-                    <div class="chapter-name">
+                <a style="display:block"  href="#"  id="ProfitLoss">
+                    <div class="chapter-name" >
                         <h2>
                             Profit Loss
                         </h2>
                     </div>
                   </a>
 
-                  <a style="display:block" href="#">
+                  <a style="display:block" href="#" id="Algebra">
                     <div class="chapter-name">
                         <h2>
                             Algebra
@@ -46,7 +47,7 @@
                   </a>
 
 
-                  <a style="display:block" href="#">
+                  <a style="display:block" href="#" id="Percentage">
                     <div class="chapter-name">
                         <h2>
                             Percentage
@@ -54,7 +55,7 @@
                     </div>
                   </a>
             </div>
-
+        <p id="test"></p>
         <!--Footer-->
            <footer class="footer-distributed">
 
@@ -83,4 +84,14 @@
       
           </footer>
     </body>
+    <script>
+        window.onload=function myfunc(){
+           const ids=["ProfitLoss","Algebra","Percentage"]; 
+           ids.forEach(element => {
+               var x=document.getElementById(element);
+               x.href="questions.html?chapter="+element;
+           });
+            
+        }
+    </script>
 </html>
