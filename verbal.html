@@ -26,7 +26,33 @@
                 </div>
                 </nav>
             </header>
+            <div>
+                <h1 id="chapters">Chapters</h1>
+                <a style="display:block"  href="#"  id="Lesson1">
+                    <div class="chapter-name" >
+                        <h2>
+                            Lesson 1
+                        </h2>
+                    </div>
+                  </a>
 
+                  <a style="display:block" href="#" id="Lesson2">
+                    <div class="chapter-name">
+                        <h2>
+                            Lesson 2
+                        </h2>
+                    </div>
+                  </a>
+
+
+                  <a style="display:block" href="#" id="Lesson3">
+                    <div class="chapter-name">
+                        <h2>
+                            Lesson 3
+                        </h2>
+                    </div>
+                  </a>
+            </div>
 
         <!--Footer-->
            <footer class="footer-distributed">
@@ -56,4 +82,14 @@
       
           </footer>
     </body>
+    <script>
+        window.onload=function myfunc(){
+           const ids=["Lesson1","Lesson2","Lesson3"]; 
+           ids.forEach(element => {
+               var x=document.getElementById(element);
+               x.href="questions.html?chapter="+element;
+           });
+            
+        }
+    </script>
 </html>
