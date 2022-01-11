@@ -72,7 +72,7 @@
             const db=getDatabase();
            
             window.onload=function get_questions(){
-                var query = window.location.href;
+                var query = window.location.search;
                 console.log(query);
                 const urlParams = new URLSearchParams(query);
                 const chapter = urlParams.get('chapter')
