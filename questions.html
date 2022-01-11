@@ -74,9 +74,9 @@
             window.onload=function get_questions(){
                 var query = window.location.href;
                 console.log(query);
-                var parameters = new URLSearchParams(query);
-                console.log(parameters.values()[0]);
-                var chapter=parameters.values()[0];
+                const urlParams = new URLSearchParams(query);
+                const chapter = urlParams.get('chapter')
+                
                 var question_div=document.getElementById("render-questions");
                 var chapter_div=document.getElementById("chapter-name");
                 chapter_div.innerHTML="<h2>"+chapter+"</h2>";
