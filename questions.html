@@ -77,6 +77,7 @@
                 //const urlParams = new URLSearchParams(query);
                 //const chapter = urlParams.get('chapter');
                 var chapter=sessionStorage.getItem('chapter');
+                console.log(chapter);
                 var question_div=document.getElementById("render-questions");
                 var chapter_div=document.getElementById("chapter-name");
                 chapter_div.innerHTML="<h2>"+chapter+"</h2>";

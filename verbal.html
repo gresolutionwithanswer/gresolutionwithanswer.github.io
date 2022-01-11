@@ -28,7 +28,7 @@
             </header>
             <div>
                 <h1 id="chapters">Chapters</h1>
-                <a style="display:block"  href="#"  id="Lesson1">
+                <a style="display:block"  href="#"  id="Lesson1" onClick="myfunc(this.id)">
                     <div class="chapter-name" >
                         <h2>
                             Lesson 1
@@ -36,7 +36,7 @@
                     </div>
                   </a>
 
-                  <a style="display:block" href="#" id="Lesson2">
+                  <a style="display:block" href="#" id="Lesson2" onClick="myfunc(this.id)">
                     <div class="chapter-name">
                         <h2>
                             Lesson 2
@@ -45,7 +45,7 @@
                   </a>
 
 
-                  <a style="display:block" href="#" id="Lesson3">
+                  <a style="display:block" href="#" id="Lesson3" onClick="myfunc(this.id)">
                     <div class="chapter-name">
                         <h2>
                             Lesson 3
@@ -83,12 +83,12 @@
           </footer>
     </body>
     <script>
-        window.onload=function myfunc(){
-           const ids=["Lesson1","Lesson2","Lesson3"]; 
-           ids.forEach(element => {
-               var x=document.getElementById(element);
-               x.href="questions.html?chapter="+element;
-           });
+        window.onload=function myfunc(clicked){
+           //const ids=["Lesson1","Lesson2","Lesson3"]; 
+           //ids.forEach(element => {
+             //  var x=document.getElementById(element);
+               //x.href="questions.html?chapter="+element;
+           //});
            sessionStorage.setItem("chapter",clicked);
         }
     </script>
