@@ -28,6 +28,7 @@
             </nav>
           </header>
           <!--Main Content-->
+          <div id="chapter-name"></div>
           <div id="render-questions">
 
           </div>
@@ -75,18 +76,26 @@
                 var paramters = new URLSearchParams(query);
                 var chapter=paramters.values()[0];
                 var question_div=document.getElementById("render-questions");
+                var chapter_div=document.getElementById("chapter-name");
+                chapter_div.innerHTML="<h2>"+chapter+"</h2>";
                 const dbref=ref(db);
+                var render='<ul>';
                 console.log("H");
-                get(child(dbref,"questions"))
+                var count=1;
+                get(child(dbref,chapter))
                 .then((snapshot)=>{
                     console.log(snapshot.val());
                     snapshot.forEach(snap=>{
-                        console.log(snap.val().question);
-                        console.log(snap.val().optionA);
+                        console.log(snap.word);
+                        render=render+'<li class="word-group"><h2>'+snap.val().word+'</h2>'+
+                            '<p> Meaning- '+snap.val().meaning+'</p></li>';
                         
                     });
+                    render=render+"</ul>";
+
+                    question_div.innerHTML=render; 
                 });
-                
+                               
                 }
 
         
