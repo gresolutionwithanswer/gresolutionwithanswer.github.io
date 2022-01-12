@@ -72,10 +72,7 @@
             const db=getDatabase();
            
             window.onload=function get_questions(){
-                //var query = window.location.href;
-                //console.log(query);
-                //const urlParams = new URLSearchParams(query);
-                //const chapter = urlParams.get('chapter');
+                
                 var chapter=sessionStorage.getItem('chapter');
                 console.log(chapter);
                 var question_div=document.getElementById("render-questions");
