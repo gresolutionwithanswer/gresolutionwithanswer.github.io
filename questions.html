@@ -9,7 +9,6 @@
         <meta name="keywords" content="Verbal,GRE,words,meanings">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="questions.css">
-        <script type='text/javascript' src='config.js'></script>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
@@ -54,21 +53,20 @@
               <p>GRE Practice Place &copy; 2022</p>
             </div>
           </footer>
-          <script type='text/javascript' src='config.js'></script>
           <script type="module">
             
             import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
             import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-analytics.js";
             
-            const firebaseConfig = {
-              apiKey: firebase.apiKey,
-              authDomain: firebase.authDomain,
-              databaseURL: firebase.DatabaseURL,
-              projectId: firebase.projectId,
-              storageBucket: firebase.storageBucket,
-              messagingSenderId: firebase.messagingSenderId,
-              appId: firebase.appId,
-              measurementId: firebase.measurementId
+            const firebase = {
+              apiKey: "AIzaSyB1gGkWSHDvcGpMbpMwD755BrKOOYmQpUM",
+              authDomain: "gre-practice-place.firebaseapp.com",
+              databaseURL: "https://gre-practice-place-default-rtdb.firebaseio.com",
+              projectId: "gre-practice-place",
+              storageBucket: "gre-practice-place.appspot.com",
+              messagingSenderId: "797541750241",
+              appId: "1:797541750241:web:407e0d2daa6b1179b92ea0",
+              measurementId: "G-8GSD6M6291"
             };
             const app=initializeApp(firebaseConfig);
             import {getDatabase, set,child,ref,get} from "https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js"
